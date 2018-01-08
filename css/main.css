@@ -373,7 +373,6 @@ nav ul.pag-sub{
 nav{
     margin-top: 20px;
     float: right;
-
   }
 
 
@@ -829,7 +828,8 @@ footer .networks{
       width: 100%;
       background: white;
       height: auto;
-      top: 72px;
+      margin: 0;
+      border: none;
     }
     
     nav .nav-link {
@@ -848,7 +848,6 @@ footer .networks{
     
     nav ul.submenu {
       position: static;
-      display: block;
       margin: 0;
       padding: 10px;
     }
@@ -856,6 +855,10 @@ footer .networks{
     header.default nav .nav-link {
         color:#414042;
     }
+    
+    header .row .col-10 {
+      padding: 0;
+    } 
     
             
 }
