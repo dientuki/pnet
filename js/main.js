@@ -12,7 +12,7 @@ $("header").removeClass('default');
     $("header").addClass('default');
   }
 
-});
+}).trigger("scroll");
 
 
 function display() {
