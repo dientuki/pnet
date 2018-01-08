@@ -155,8 +155,10 @@ body{
     text-align: right;
 
 }
+.colR p{
+    margin: 0 0 20px;
+}
 .colR img{
-vertical-align: baseline;
 margin-left: 15px;
 }
 
@@ -233,7 +235,7 @@ margin-left: 15px;
   background-image: url(../img/datacenter-hero.png);
 }
 .fade-carousel .slides .slide-3 {
-  background-image: url(https://ununsplash.imgix.net/photo-1416339276121-ba1dfa199912?q=75&fm=jpg&s=9bf9f2ef5be5cb5eee5255e7765cb327);
+  background-image: url(../img/pagos-clientes-hero.png);
 }
 
 /********************************/
@@ -270,21 +272,14 @@ header
 }
 
 
-.inner-wrapper{
-    position: relative;
-    width: 1100px;
-    margin: 0 auto;
-}
 
 header .logo {
     display: block;
-position: absolute;
 height: 3.5em;
 width: 11.5em;
 left: 0;
 text-indent: -9999em;
-top:50%;
-transform:translateY(-50%);
+margin-top: 10px;
 }
 
 header .logo .logo-svg {
@@ -364,8 +359,6 @@ nav ul.pag-sub{
 
 }
 
-
-
 .act{
     font-family: Arial;
     font-weight: bold;
@@ -378,22 +371,184 @@ nav ul.pag-sub{
 }
 
 nav{
-    top: 20px;
-    right: 0;
-    position: absolute;
-    padding: 0 !important;
+    margin-top: 20px;
+    float: right;
+
   }
 
-#social{
 
-    width: 100%;
-    height: 300px;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00a3d0+24,00afe1+62,a5cb3a+100 */
-    background: #00a3d0 ;
+  @media (min-width: 576px) {
+    .card-columns {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-columns {
+        column-count: 3;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-columns {
+        column-count: 3;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-columns {
+        column-count: 3;
+    }
+}
+
+
+#servicios{
+    padding-bottom: 100px;
+}
+
+
+#servicios .main-tit{
+    font-family: "DINNextRoundedLTPro-Medium";
+    font-size:42px;
+    color: #fff;
+    text-align: center;
+    margin: 60px 0;
+    text-transform: uppercase;
+
+
+}
+
+
+#servicios p{
+    font-family: Arial;
+    font-size: 26px;
+    color: #fff;
+    margin-left: 10px;
+
+}
+
+#servicios .card{
+    padding: 40px 10px;}
+
+
+#pagos{
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+#pagos .tit{
+    font-family: "DINNextRoundedLTPro-Bold";
+    font-size: 38px;
+    color: #00a9e0;
+        border-bottom: 2px solid #00a9e0;
+        width: 290px;
+
+}
+#pagos p{
+    font-family: Arial;
+    font-size: 16px;
+    color: #414042;
+            width: 290px;
+            margin: 25px 0;
+
+
+}
+
+
+
+#pagos  button {
+      font-family: Arial;
+      border:0;
+  color: #fff;
+  font-size: 16px;
+  background: #00a9e0;
+    padding: 5px 10px;
+      text-decoration: none;
+      margin-top: 25px;
+
+}
+#pagos  input {
+    padding: 10px;
+    border: 2px solid #00a9e0;
+    background-color: #fff;
+    width: 290px;
+    height: 45px;
+
+}
+#pagos  button i::before{
+    margin-left: 15px;
+    font-size: 16px;
+
+}
+
+#alcance .main-tit, #comprobantes .main-tit{
+    font-family: "DINNextRoundedLTPro-Medium";
+    font-size:42px;
+    color: #00a9e0;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+
+#alcance .main-tit{
+    margin-bottom: 60px;
+
+
+}
+
+#comprobantes .main-tit{
+        margin: 40px 0 60px 0;
+
+}
+
+
+
+#comprobantes, #alcance{
+    background-color: #fff;
+    padding-bottom: 60px;
+
+}
+
+#comprobantes .tit{
+    font-family: "DINNextRoundedLTPro-Medium";
+    font-size: 38px;
+    color: #00a9e0;
+    text-align: right;
+}
+
+#comprobantes button{
+    font-family: "DINNextRoundedLTPro-Medium";
+      border:0;
+  color: #fff;
+  font-size: 17px;
+  background: #00a9e0;
+    padding: 5px 10px;
+      text-decoration: none;
+          text-align: left;
+
+
+      }
+
+
+#comprobantes button i::before{
+    margin-left: 25px;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+.dg-bg{
+ background: #00a3d0 ;
     background: -moz-linear-gradient(-45deg, #00a3d0 24%, #00afe1 62%, #a5cb3a 100%)  ; /* FF3.6-15 */
     background: -webkit-linear-gradient(-45deg, #00a3d0 24%,#00afe1 62%,#a5cb3a 100%)  ; /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(135deg, #00a3d0 24%,#00afe1 62%,#a5cb3a 100%)  ; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a3d0', endColorstr='#a5cb3a',GradientType=1 )  ; /* IE6-9 fallback on horizontal gradient */
+
+}
+#social{
+
+    width: 100%;
+   
 }
 
 
@@ -402,6 +557,8 @@ nav{
     background-image: url('../img/pattern.png');
     width: 100vw;
     height: 100%;
+        padding-bottom: 60px;
+
 
 }
 
@@ -412,11 +569,10 @@ nav{
 
 #social .twit{
     font-family: Arial !important;
-    width: 290px;
-    float: left;
-    margin-right: 100px;
     color: #fff;
     font-size: 16px;
+    padding-right: 30px;
+    margin-top: 40px;
 
 }
 
@@ -428,25 +584,21 @@ nav{
 #social .user{
     float: left;
     font-family: "DINNextRoundedLTPro-Bold";
+        margin-top: -26px;
 }
 
 #social .date{
     float: right;
+        margin-top: -26px;
 }
 
 #social p{
     border-top: 2px solid #fff;
-    margin-top:26px;
-        padding-top: 10px;
-
     font-size: 18px;
-
 }
 
 #social button{
-        position: absolute;
-    right: 25px;
-    top: 17px;
+      
   font-family: "DINNextRoundedLTPro-Regular";
   -webkit-border-radius: 5;
   -moz-border-radius: 5;
@@ -464,18 +616,52 @@ nav{
     margin-right: 5px;
 }
 
-#servicios{
+#novedades{
     background-color: #fff;
+        padding-bottom: 65px;
+
 }
+#novedades .main-tit{
+    padding: 65px 0;
+      font-family: "DINNextRoundedLTPro-Medium";
+      font-size: 46px;
+      color: #00a9e0;
+      text-align: center;
+}
+
+#novedades .date{
+    font-family: Arial;
+    font-size: 16px;
+    font-style: italic;
+    color: #414042;
+}
+
+#novedades .tit{
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: bold;
+    color: #00a9e0;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+#novedades p{
+    font-family: Arial;
+    font-size: 16px;
+    color: #414042;
+}
+
+
+
+
+
 #contacto{
-    height: 770px;
+    padding-bottom:70px;
     padding-top: 125px;
 }
 
 #contacto .data{
-    float: left;
-    margin-right: 48px; 
-    width: 260px;
+
    letter-spacing: -1px;
 }
 
@@ -518,11 +704,7 @@ nav{
 }
 
 
-#contacto .personal{
-    float: left;
-    margin-right: 37px; 
-    width: 290px;
-}
+
 
 #contacto .personal input{
     text-transform: uppercase;
@@ -539,12 +721,6 @@ nav{
 
 }
 
-#contacto .message{
-    width: 410px;
-    float: left;
-
-
-}
 #contacto .message textarea{
     text-transform: uppercase;
     color: #414042;
@@ -555,9 +731,9 @@ nav{
 }
 
 #contacto button{
-  position: absolute;
-  right: 54px;
-  top: 315px;
+        float: right;
+    margin-top: 20px;
+    margin-right: 14px;
   font-family: "DINNextRoundedLTPro-Medium";
   border-radius: 0;
   border:none;
@@ -571,14 +747,42 @@ nav{
     margin-left: 10px;
     }
 
-#contacto .logos{
-    position: absolute;
-    top: 490px;}
+#contacto .logos-pnet{
+    margin-top: 140px;
+
+}
 
 footer{
     padding: 80px 0;
     background-color: #595959;
 }
+
+footer .tit{
+
+      font-family: "DINNextRoundedLTPro-Medium";
+  font-size: 24px;
+  color: #fff;
+}
+
+
+footer p{
+
+font-family: Arial;
+  font-size: 14px;
+  color: #fff;
+}
+
+
+
+footer .networks{
+        position: absolute;
+    bottom: 0px;
+    right: 0;
+    color: #fff
+
+}
+
+
 
 .navbar-toggle {
     position: absolute;
@@ -629,7 +833,7 @@ footer{
     }
     
     nav .nav-link {
-      display: block;
+        display: block;
     }
     
     nav .main {
@@ -644,6 +848,7 @@ footer{
     
     nav ul.submenu {
       position: static;
+      display: block;
       margin: 0;
       padding: 10px;
     }
@@ -661,7 +866,6 @@ footer{
        (min-resolution: 120dpi) {
 
 }
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
