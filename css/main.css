@@ -585,7 +585,6 @@ footer{
     right: 0;
     margin: 0;
     top:50%;
-    background: red;
     transform: translateY(-50%);
  }
  
@@ -629,6 +628,10 @@ footer{
       top: 72px;
     }
     
+    nav .nav-link {
+      display: block;
+    }
+    
     nav .main {
       padding: 0;
       margin: 0;
@@ -641,7 +644,6 @@ footer{
     
     nav ul.submenu {
       position: static;
-      display: block;
       margin: 0;
       padding: 10px;
     }
